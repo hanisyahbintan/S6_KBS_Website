@@ -1000,51 +1000,50 @@
           </iframe>
         </div>
 
-        <!-- Contact Form -->
-        <div class="form-container">
-          <h3>Kirim Pesan</h3>
-          <p>Silakan isi formulir berikut untuk menyampaikan pertanyaan atau kebutuhan informasi mengenai layanan perusahaan.</p>
+      
+<!-- Contact Form -->
+<div class="form-container">
+  <h3>Kirim Pesan</h3>
+  <p>Silakan isi formulir berikut untuk menyampaikan pertanyaan atau kebutuhan informasi mengenai layanan perusahaan.</p>
 
-          <form action="forms/contact.php" method="post" class="php-email-form">
+  <form action="https://api.web3forms.com/submit" method="POST" class="web3forms-form">
 
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="nameInput" name="name" placeholder="Nama Lengkap" required>
-              <label for="nameInput">Nama Lengkap</label>
-            </div>
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="f79cb593-c45e-4c27-a72c-d0a047a3ce50">
 
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="emailInput" name="email" placeholder="Alamat Email" required>
-              <label for="emailInput">Alamat Email</label>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subjek Pesan" required>
-              <label for="subjectInput">Subjek Pesan</label>
-            </div>
-
-            <div class="form-floating mb-3">
-              <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Tulis Pesan Anda" style="height: 150px" required></textarea>
-              <label for="messageInput">Tulis Pesan Anda</label>
-            </div>
-
-            <div class="my-3">
-              <div class="loading">Mengirim pesan...</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Pesan berhasil dikirim. Terima kasih telah menghubungi kami!</div>
-            </div>
-
-            <div class="d-grid">
-              <button type="submit" class="btn-submit">
-                Kirim Pesan <i class="bi bi-send-fill ms-2"></i>
-              </button>
-            </div>
-
-          </form>
-        </div>
-
-      </div>
+    <!-- Nama Lengkap -->
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="nameInput" name="name" placeholder="Nama Lengkap" required>
+      <label for="nameInput">Nama Lengkap</label>
     </div>
-  </div>
+
+    <!-- Alamat Email -->
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="emailInput" name="email" placeholder="Alamat Email" required>
+      <label for="emailInput">Alamat Email</label>
+    </div>
+
+    <!-- Subjek Pesan -->
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subjek Pesan" required>
+      <label for="subjectInput">Subjek Pesan</label>
+    </div>
+
+    <!-- Isi Pesan -->
+    <div class="form-floating mb-3">
+      <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Tulis Pesan Anda" style="height: 150px" required></textarea>
+      <label for="messageInput">Tulis Pesan Anda</label>
+    </div>
+
+    <!-- Tombol Kirim -->
+    <div class="d-grid">
+      <button type="submit" class="btn-submit">
+        Kirim Pesan <i class="bi bi-send-fill ms-2"></i>
+      </button>
+    </div>
+
+  </form>
+</div>
 
 </section><!-- /Contact Section -->
 
